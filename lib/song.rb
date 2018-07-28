@@ -23,20 +23,21 @@ class Song
   end 
   
   def self.artists
-    @@artists.uniq
+    @@artists = @@artists.uniq
   end 
   
   #binding.pry
   def self.genres
-    @@genres.uniq
+    @@genres = @@genres.uniq
   end 
   
   def self.genre_count
-    count = 0 
-    
+    @@genre_count[@genre] ||= []
+      @@genre_count[@genre] << @name
+    @@genre_count
   end 
   
   def self.artist_count
-    self.artists.count
+    
   end 
 end 
