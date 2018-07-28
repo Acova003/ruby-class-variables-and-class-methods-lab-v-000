@@ -26,7 +26,7 @@ class Song
     @@artists = @@artists.uniq
   end 
   
-  #binding.pry
+  binding.pry
   def self.genres
     @@genres = @@genres.uniq
   end 
