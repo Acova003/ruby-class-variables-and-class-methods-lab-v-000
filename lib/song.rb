@@ -31,9 +31,9 @@ class Song
     @@genres = @@genres.uniq
   end 
   
-  def self.genre_count(genre, name)
-    @@genre_count[genre] ||= []
-      @@genre_count[genre] << name
+  def self.genre_count
+    @@genre_count[@genre] ||= []
+      @@genre_count[@genre] << @name
     @@genre_count
   end 
 end 
