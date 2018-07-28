@@ -32,8 +32,8 @@ class Song
   end 
   
   def self.genre_count
-    @@genres[@name] ||= []
-      @@genres[@name] << @name
-    @@genres
+    @@genre_count[@name] ||= []
+      @@genre_count[@name] << @name
+    @@genre_count
   end 
 end 
