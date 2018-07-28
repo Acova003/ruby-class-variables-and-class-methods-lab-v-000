@@ -26,7 +26,7 @@ class Song
     @@artists
   end 
   
-  binding.pry
+  #binding.pry
   def self.genres
     unless @@genres.include?(@genre)
       @@genres << @genre
