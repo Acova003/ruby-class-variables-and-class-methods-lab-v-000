@@ -38,6 +38,8 @@ class Song
   end 
   
   def self.artist_count
-    
+    @@artist_count[@artist] ||= []
+      @@artist_count[@artist] << @name
+    @@artist_count
   end 
 end 
