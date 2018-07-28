@@ -4,7 +4,7 @@ class Song
   
   @@count = 0 
   @@genres = []
-  @@artists = []
+  @@artists = [].uniq
   @@artist_count = {}
   @@genre_count = {}
   
