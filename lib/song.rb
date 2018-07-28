@@ -23,12 +23,12 @@ class Song
   end 
   
   def self.artists
-    @@artists = @@artists.uniq
+    @@artists.uniq
   end 
   
   #binding.pry
   def self.genres
-    @@genres = @@genres.uniq
+    @@genres.uniq
   end 
   
   def self.genre_count
