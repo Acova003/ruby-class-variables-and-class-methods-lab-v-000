@@ -4,7 +4,7 @@ class Song
   
   @@count = 0 
   @@genres = []
-  @@artists = [].uniq
+  @@artists = []
   @@artist_count = {}
   @@genre_count = {}
   
@@ -23,7 +23,7 @@ class Song
   end 
   
   def self.artists
-    @@artists
+    @@artists = @@artists.uniq
   end 
   
   #binding.pry
