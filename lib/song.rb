@@ -32,7 +32,7 @@ class Song
   end 
   
   def self.genre_count
-    genres.each_with_object(Hash.new(0)) { |genre,count| count[genre] += 1 }.sort
+    genres.each_with_object(Hash.new(0)) { |genre,count| count[genre] += 1 }.sort.to_h
   end 
   
   def self.artist_count
