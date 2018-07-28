@@ -25,11 +25,11 @@ class Song
     @@artists
   end 
   
-  def self.genres(genre)
-    unless @@genres.include?(genre)
-      @@genres << genre
+  def self.genres
+    unless @@genres.include?(@genre)
+      @@genres << @genre
     end 
   end 
   
-  def 
+  #def genre 
 end 
