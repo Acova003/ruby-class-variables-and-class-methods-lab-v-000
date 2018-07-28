@@ -1,3 +1,4 @@
+require 'pry'
 class Song 
   attr_accessor :name, :artist, :genre
   
@@ -25,6 +26,7 @@ class Song
     @@artists
   end 
   
+  binding.pry
   def self.genres
     unless @@genres.include?(@genre)
       @@genres << @genre
